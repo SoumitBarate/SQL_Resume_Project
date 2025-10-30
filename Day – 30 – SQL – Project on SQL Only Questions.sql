@@ -1,5 +1,6 @@
--- 1) Retrieve all books in the "Fiction" genre:
+-- Basic Questions : 
 
+-- 1) Retrieve all books in the "Fiction" genre:
 
 
 -- 2) Find books published after the year 1950:
@@ -31,14 +32,13 @@
 
 -- 11) Calculate the total revenue generated from all orders:
 
+
 -- Advance Questions : 
 
 -- 1) Retrieve the total number of books sold for each genre:
 
 
-
 -- 2) Find the average price of books in the "Fantasy" genre:
-
 
 
 -- 3) List customers who have placed at least 2 orders:
@@ -48,7 +48,6 @@
 
 
 -- 5) Show the top 3 most expensive books of 'Fantasy' Genre :
-
 
 
 -- 6) Retrieve the total quantity of books sold by each author:
