@@ -125,7 +125,10 @@ JOIN Customers ON orders.customer_id = Customers.customer_id
 GROUP BY Customers.customer_id, CUstomers.name
 ORDER BY Total_spent Desc LIMIT 1;
 
-
-
-
+--9) Calculate the stock remaining after fulfilling all orders:
+SELECT Books.book_id, Books.title, Books.stock, COALESCE(SUM(Orders.quantity),0) AS Order_quantity,  
+	Books.stock- COALESCE(SUM(Orders.quantity),0) AS Remaining_Quantity
+FROM Books 
+LEFT JOIN Orders ON Books.book_id=Orders.book_id
+GROUP BY Books.book_id ORDER BY Books.book_id;
 
